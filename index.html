@@ -95,6 +95,16 @@
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </a>
+          <a class="flex gap-2 flex-col" href="#?blog=02" blog="02">
+            <h3 class="font-bold text-xl">Why I Chose Design Over Customization</h3>
+            <p class="opacity-50 text-sm max-w-81">
+              From customization to clarity: lessons learned building Zen Browser.
+            </p>
+            <div class="flex text-sm font-bold items-center gap-2">
+              Read Post
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
         </section>
       </main>
       <section
@@ -151,7 +161,7 @@
         pretend to have all the answers. But with the help of a passionate
         community, I know we can build something that matters. A browser that
         doesn’t fight against you, but works <u>with you</u>.<br /><br /><br />
-        <h1>There was a browser that kind of did this — Arc.</h1>
+        <h1>There was a browser that kind of did this, Arc.</h1>
         <br />For a while, it felt like a breath of fresh air: a browser that
         challenged conventions, that cared about design, that aimed to make
         browsing feel intentional rather than chaotic. It rethought the
@@ -216,6 +226,149 @@
         new ideas and ways to improve the browser.
       </div>
       <div><strong>The internet deserves better.<br/>So do you.</strong></div>
+    </section>
+    <section id="blog-02">
+      <img
+        src="./blog-02.webp"
+        alt="Why I Chose Design Over Customization"
+        class="w-full rounded-3xl shadow-md my-8"
+        loading="lazy"
+      />
+      <div>
+        From customization to clarity: lessons learned building Zen Browser.
+        <br /><br />
+        <strong class="opacity-70">TL;DR</strong> <br />
+        <i class="opacity-40 my-2">
+          I'm not a design expert, just someone learning through building Zen. These are personal 
+          thoughts, not prescriptions. I hope they spark reflection, especially for those in the FOSS 
+          community. Read with an open mind, think beyond what I’ve written, and if anything resonates or 
+          you disagree, feel free to reach out. I’d love to talk more and keep on learning!
+        </i>
+      </div>
+      <div>
+        A year ago, I set out to build a browser. Not just any browser, but my browser. One that would 
+        reflect my values, my needs, my ideal vision of the web. I called it Zen Browser.<br/><br/>
+
+        Like many developers, I started by dreaming big: total customization, endless tweaks, and fine-grained 
+        control over every pixel. But somewhere along the way, <strong>something changed</strong>.<br/><br/>
+
+        What I found instead was clarity, not in complexity, but in simplicity. In choosing design that respected the 
+        user, instead of overwhelming them with choices.
+      </div>
+      <div>
+        <strong>The Allure of Customization</strong><br/><br/>
+        There’s something exciting about total freedom. Developers love the idea of giving users endless choice. 
+        It feels democratic. Respectful. Open.<br/><br/>
+
+        That’s how I started. Zen Browser was going to be fully moldable. You’d shape it to your needs, down 
+        to the smallest detail.<br/><br/>
+
+        But what I learned is that more choice doesn’t always mean a better experience. In fact, it often leads 
+        to decision fatigue. Users get lost in the settings instead of enjoying the product. And many never find a 
+        setup they actually love, they just keep tweaking.<br/><br/>
+
+        At some point, I realized that no one ever said, <i>“I love this browser because I spent three hours configuring 
+        it.”</i> They just said, <i>“It works. It feels right.”</i>
+      </div>
+      <div>
+        <strong>The Turning Point</strong><br/><br/>
+        It happened with something as small as a color picker.<br/><br/>
+
+        Zen Browser's original color picker was incredibly flexible. You could set any color, rotation, 
+        gradient style, it was a playground. Total freedom. And on paper, it was a win. Users could make their browser 
+        look exactly how they wanted.<br/><br/>
+
+        But something didn’t sit right. The more I used it, the more I noticed the results often looked... off. Some color 
+        combos clashed. Others lacked contrast. Gradients looked messy or chaotic. The feature was powerful, but it didn’t 
+        guide anyone. It just gave them tools and walked away.<br/><br/>
+
+        That’s when I looked at what Arc did, and I’ll admit, we copied it. (<i class="text-xs">Big shock, I know.</i>)<br/><br/>
+
+        We removed the rotation. We enforced color harmony. Gradients had to use complementary or analogous tones. The result? 
+        No more wild combinations. No more chaos. Suddenly, every workspace had colors that just worked. Gradients that felt 
+        designed, not generated.<br/><br/>
+
+        Not everyone liked the change. People asked why they couldn’t tweak things the old way. <strong>They missed the freedom</strong>. But I didn’t miss it. In fact, I felt <strong>proud</strong>.<br/><br/>
+
+        That was my turning point. When I realized I didn’t want to make something endlessly customizable. I wanted to make 
+        something beautiful. Something that felt finished. Something that didn’t ask to be fixed or adjusted, it just looked good, 
+        because it was designed that way.<br/><br/>
+
+        That moment, over a simple color picker, defined everything that came next.<br/><br/>
+
+        <span class="opacity-70 italic">Looking back, it wasn’t just about colors. It was about clarity. I realized that good design isn’t about offering every 
+        option, it’s about making the right choices so the user doesn’t have to. That shift changed everything about how I approached Zen.</div>
+      </div>
+      <div>
+        <strong>Finding the Sweet Spot</strong><br/><br/>
+
+        Total rigidity can be just as limiting as total freedom. The real challenge, and the real art, is in finding the 
+        balance between the two.<br/><br/>
+
+        That’s where the idea of sensible defaults, respectful overrides came in.
+
+        With Zen, I wanted most users to open the browser and feel like it was already finished. Clean, quiet, 
+        considered. But I also wanted to leave a door open, discreet, intentional, out of the way, for those who needed more.<br/><br/>
+
+        That’s why <strong>advanced preferences</strong> exist. Hidden settings. Power-user flags. The kind of features you don’t stumble 
+        into, but deliberately reach for. Like the ability to bring back full gradient control in the color picker. 
+        Or override animation timings. Or adjust tab behavior beyond the default.<br/><br/>
+
+        These aren’t features for everyone. They’re escape hatches for those who know what they want. And keeping them 
+        tucked away preserves the core experience for everyone else.<br/><br/>
+
+        The sweet spot isn’t compromise. It’s clarity, knowing what your product stands for, while still leaving space 
+        at the edges for people who ask for more.
+      </div>
+      <div>
+        <strong>What I Learned</strong><br/><br/>
+
+        This past year didn’t just teach me how to build a browser. It taught me how to think.<br/><br/>
+
+        I used to believe that more options made a better product. That users wanted control above all else. But 
+        I’ve learned something deeper, people don’t open a browser to tweak. They open it to use. And the best 
+        experience is the one that’s already great, before you touch a single setting.<br/><br/>
+
+          <ul class="ml-4">
+            <li><strong>Customization is not a replacement for good design.</strong> If your product only shines when users tweak it, you haven’t finished it.<br/><br/></li>
+            <li><strong>Defaults matter more than features. Most people never change settings.</strong> What they see first becomes their entire experience.<br/><br/></li>
+            <li><strong>Good design is opinionated, and that’s okay.</strong> You’re allowed to make decisions on behalf of the user, as long as those decisions are thoughtful and respectful.<br/><br/></li>
+            <li><strong>Hidden power is better than visible clutter.</strong> Give advanced users what they need, but keep the surface calm and approachable.<br/><br/></li>
+            <li><strong>Every decision sends a message.</strong> Even a toggle switch tells the user what kind of product they’re dealing with, precise and 
+              focused, or chaotic and unfinished.<br/><br/></li>
+          </ul>
+
+        Zen Browser got better the moment I stopped trying to please everyone and started trying to serve someone, someone who wants clarity, not control. Someone who wants to open their browser and feel calm, not busy.</li>
+      </div>
+      <div>
+        <strong>A Quiet Conclusion</strong><br/><br/>
+
+        I’m not a design expert. I didn’t study user experience or typography or color theory. I’m just 
+        someone who built a browser, made a lot of mistakes, and slowly started to see things differently.<br/><br/>
+
+        Zen Browser isn’t perfect. It still has rough edges. There are things I’d change, and things I’m 
+        still unsure about. But if there’s one thing I’ve learned, it’s that <strong>simplicity takes more courage 
+        than complexity</strong>. It’s easier to add features than it is to say “this is enough.”<br/><br/>
+
+        This past year taught me to trust the user, not by handing them the entire toolbox, but by giving 
+        them something they can rely on. <strong>Something that feels considered</strong>.<br/><br/>
+
+        If you're building something of your own, I hope you don’t feel pressure to make it do everything. 
+        Maybe just focus on making it <strong>feel right</strong>. Thoughtful defaults. Strong ideas. Gentle polish. 
+        That’s what people remember.<br/><br/>
+
+        Not the number of settings. Not the sliders or toggles. Just how it made them feel. That’s the kind of design 
+        I’m still learning to do. And I hope to get better at it, one <strong>release at a time</strong>.<br/><br/>
+
+        So, if you’re building something, remember this:<br/><br/>
+        <i class="ml-4 opacity-70 font-bold">
+          You don’t have to please everyone. You just have to care deeply about someone.
+        </i><br/><br/>
+
+        Stay safe out there. Build with clarity. And never feel bad for not pleasing everyone.<br/><br/>
+        
+        ~ mr. m ✌️
+      </div>
     </section>
     <script async type="module" src="./script.js" defer></script>
     <style>
