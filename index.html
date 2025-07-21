@@ -27,7 +27,10 @@
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
-    <div class="flex items-center space-between w-full flex-col">
+    <div
+      class="flex items-center space-between w-full flex-col font-medium"
+      style="zoom: 120%"
+    >
       <main
         class="mx-auto w-full px-12 md:px-0 md:w-2/3 lg:w-1/2 2xl:w-1/3 h-full relative gap-16 py-18 flex flex-col"
       >
@@ -269,11 +272,11 @@
         <strong class="opacity-70">TL;DR</strong> <br />
         <i class="opacity-40 my-2">
           I'm not a design expert, just someone learning through building Zen.
-          These are personal thoughts, not prescriptions. I hope they spark
-          reflection, especially for those in the FOSS community. Read with an
-          open mind, think beyond what I’ve written, and if anything resonates
-          or you disagree, feel free to reach out. I’d love to talk more and
-          keep on learning!<br /><br />
+          These are personal just thoughts. I hope they spark reflection,
+          especially for those in the FOSS community. Read with an open mind,
+          think beyond what I’ve written, and if anything resonates or you
+          disagree, feel free to reach out. I’d love to talk more and keep on
+          learning!<br /><br />
 
           Don't worry, don't uninstall Zen inmediatedly. This isn’t about
           removing all customization. Zen will always support mods and deeper
@@ -341,7 +344,7 @@
 
         Not everyone liked the change. People asked why they couldn’t tweak
         things the old way. <strong>They missed the freedom</strong>. But I
-        didn’t miss it. In fact, I felt <strong>proud</strong>.<br /><br />
+        didn’t miss it. In fact, <strong>I felt proud</strong>.<br /><br />
 
         That was my turning point. When I realized I didn’t want to make
         something endlessly customizable. I wanted to make something beautiful.
@@ -521,56 +524,56 @@
         color picker, we need to know: the angle from the center to the dot, and
         the distance from the center to the dot.
         <br /><br />
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow>
-    <mi>distance</mi>
-    <mo>=</mo>
-    <mrow>
-      <mn>1</mn>
-      <mo>&minus;</mo>
-      <mrow>
-        <mi>min</mi>
-        <mo stretchy="false">(</mo>
-        <mrow>
-          <mfrac>
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mi>distance</mi>
+            <mo>=</mo>
             <mrow>
-              <msqrt>
+              <mn>1</mn>
+              <mo>&minus;</mo>
+              <mrow>
+                <mi>min</mi>
+                <mo stretchy="false">(</mo>
                 <mrow>
-                  <msup>
+                  <mfrac>
                     <mrow>
-                      <mo stretchy="false">(</mo>
-                      <mi>x</mi>
-                      <mo>&minus;</mo>
-                      <mi>centerX</mi>
-                      <mo stretchy="false">)</mo>
+                      <msqrt>
+                        <mrow>
+                          <msup>
+                            <mrow>
+                              <mo stretchy="false">(</mo>
+                              <mi>x</mi>
+                              <mo>&minus;</mo>
+                              <mi>centerX</mi>
+                              <mo stretchy="false">)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                          </msup>
+                          <mo>+</mo>
+                          <msup>
+                            <mrow>
+                              <mo stretchy="false">(</mo>
+                              <mi>y</mi>
+                              <mo>&minus;</mo>
+                              <mi>centerY</mi>
+                              <mo stretchy="false">)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                          </msup>
+                        </mrow>
+                      </msqrt>
                     </mrow>
-                    <mn>2</mn>
-                  </msup>
-                  <mo>+</mo>
-                  <msup>
-                    <mrow>
-                      <mo stretchy="false">(</mo>
-                      <mi>y</mi>
-                      <mo>&minus;</mo>
-                      <mi>centerY</mi>
-                      <mo stretchy="false">)</mo>
-                    </mrow>
-                    <mn>2</mn>
-                  </msup>
+                    <mi>radius</mi>
+                  </mfrac>
+                  <mo>,</mo>
+                  <mn>1</mn>
                 </mrow>
-              </msqrt>
+                <mo stretchy="false">)</mo>
+              </mrow>
             </mrow>
-            <mi>radius</mi>
-          </mfrac>
-          <mo>,</mo>
-          <mn>1</mn>
-        </mrow>
-        <mo stretchy="false">)</mo>
-      </mrow>
-    </mrow>
-  </mrow>
-</math>
-<br />
+          </mrow>
+        </math>
+        <br />
         <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
           <mrow>
             <mi>angle</mi>
@@ -599,7 +602,7 @@
         <br /><br />
         Now that we have the distance and angle, we can calculate the hue,
         saturation, and lightness values. Please note that the normalized
-        distance is calculated by subtracting the distance from 1, so that we 
+        distance is calculated by subtracting the distance from 1, so that we
         get more chromatic colors when the distance is closer to the center, and
         more desaturated colors when the distance is closer to the edge of the
         color picker.
