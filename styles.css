@@ -1,3 +1,7 @@
+:root {
+  --border-color: rgb(41, 37, 36);
+}
+
 * {
   font-family:
     SF Pro,
@@ -46,7 +50,7 @@ body {
     45deg,
     transparent,
     transparent 49%,
-    rgb(63, 41, 27) 49%,
+    var(--border-color) 49%,
     transparent 51%
   );
 }
@@ -55,7 +59,7 @@ body {
     -45deg,
     transparent,
     transparent 49%,
-    rgb(63, 41, 27) 49%,
+    var(--border-color) 49%,
     transparent 51%
   );
 }

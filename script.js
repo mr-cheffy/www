@@ -9,14 +9,11 @@ var insideBlog = false;
 async function animateAndOpenBlog(blogid, blogElem, fromLoad = false) {
   insideBlog = true;
   if (!fromLoad) {
-    await animate(
-      "#footer",
-      {
-        opacity: [1, 0],
-        y: [0, 20],
-        blur: [0, 1],
-      },
-    );
+    await animate("#footer", {
+      opacity: [1, 0],
+      y: [0, 20],
+      blur: [0, 1],
+    });
     await animate(
       "#content > *, #projects > *",
       {
@@ -131,7 +128,9 @@ document.getElementById("back").onclick = async () => {
   insideBlog = false;
   beforeLoadBlog = null;
   history.pushState({}, "", "/");
-  const elements = Array.from(document.querySelectorAll("#back, #blog-content > *")).reverse();
+  const elements = Array.from(
+    document.querySelectorAll("#back, #blog-content > *"),
+  ).reverse();
   await animate(
     elements,
     {
