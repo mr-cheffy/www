@@ -29,12 +29,12 @@ async function animateAndOpenBlog(blogid, blogElem, fromLoad = false) {
   document.getElementById("content").classList.add("hidden");
   document.getElementById("projects").classList.add("hidden");
   document.getElementById("blog-space").classList.remove("hidden");
-  const img = document.querySelector(`#blog-${blogid} > img`);
+  const img = document.querySelector(`#blog-${blogid} > img`) || document.querySelector(`#blog-${blogid} > video`);
   const title = blogElem.querySelector("h3").textContent;
   const content = [];
   const blogParent = document.getElementById(`blog-${blogid}`);
   for (const child of blogParent.children) {
-    if (child.tagName === "IMG") {
+    if (child.tagName === "IMG" || child.tagName === "VIDEO") {
       continue;
     }
     content.push(child.innerHTML);
