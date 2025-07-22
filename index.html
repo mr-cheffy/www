@@ -493,7 +493,7 @@
         to read.
       </div>
       <div>
-        <h1>Understanding colors: Part 1 - The HSL color model</h1>
+        <h1>Extracting colors: Part 1 - The HSL color model</h1>
         <br />
         Colors are a fascinating topic, and there are many ways to represent
         them. The most common way is the RGB color model, which represents
@@ -511,7 +511,7 @@
         />
       </div>
       <div>
-        <h1>Understanding colors: Part 2 - The HSL color picker</h1>
+        <h1>Extracting colors: Part 2 - The HSL color picker</h1>
         <br />
         The way colors will be represented in our color picker is by calculating
         the position of our dots from the middle of the color picker, to extract
@@ -644,7 +644,45 @@
           </mrow>
         </math>
         <br /><br />
-        <strong>TODO: NOT FINISHED!</strong>
+      </div>
+      <div>
+        <h1>Displaying colors: Part 1 - Dark mode or light mode?</h1>
+        <br />
+        Now that we have an RGB color after converting the HSL values, we need
+        to decide whether to use a light or dark mode for the sidebar theme.
+        <br /><br />
+        This is a very important decision, because since we can go from white to
+        black in the color picker, we need to decide whether to use a light or
+        dark mode for the sidebar theme, so that the text is always readable.
+        <br /><br />
+        The way we do this is by checking the lightness value and deciding what
+        theme to used based on the contrast from both text colors, and the
+        background color.
+        <br /><br />
+        First, we need to calculate the luminance of the background color when
+        blended with the text color (to simulate text opacity), and then we can
+        compare the contrast ratios to decide on the theme.
+        <br /><br />
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mi>Y</mi>
+            <mo>=</mo>
+            <mrow>
+              <mn>0.2126</mn>
+              <mo>&times;</mo>
+              <mi>R</mi>
+              <mo>+</mo>
+              <mn>0.7152</mn>
+              <mo>&times;</mo>
+              <mi>G</mi>
+              <mo>+</mo>
+              <mn>0.0722</mn>
+              <mo>&times;</mo>
+              <mi>B</mi>
+            </mrow>
+          </mrow>
+        </math>
+        <strong>TODO: NOT FINISHED YET</strong>
       </div>
     </section>
     <script async type="module" src="./script.js" defer></script>
