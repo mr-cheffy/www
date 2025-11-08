@@ -34,9 +34,7 @@
         <nav class="flex justify-between">
           <a id="logo" href="/">
             <h2 class="text-2xl font-semibold leading-none">mr. m</h2>
-            <h3 class="text-base opacity-50 italic leading-none">
-              Cheffy
-            </h3>
+            <h3 class="text-base opacity-50 italic leading-none">Cheffy</h3>
           </a>
           <div id="links" class="gap-5 flex items-center">
             <a href="https://github.com/mr-cheffy"
@@ -112,6 +110,21 @@
             <p class="opacity-50 text-sm max-w-81">
               A deep dive into the design decisions behind Zen's color picker,
               and how it works behind the scenes.
+            </p>
+            <div class="flex text-sm font-bold items-center gap-2">
+              Read Post
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+          <a
+            class="flex gap-2 flex-col"
+            href="#?blog=04"
+            blog="04"
+            style="display: none"
+          >
+            <h3 class="font-bold text-xl">Goodbye, my sweet girl</h3>
+            <p class="opacity-50 text-sm max-w-81">
+              A heartfelt farewell to a cherished companion.
             </p>
             <div class="flex text-sm font-bold items-center gap-2">
               Read Post
@@ -687,7 +700,72 @@
         <strong>TODO: NOT FINISHED YET</strong>
       </div>
     </section>
-    <script async type="module" src="./script.js" defer></script>
+    <section id="blog-04">
+      <img
+        src="./blog-04.jpg"
+        alt="Goodbye old friend"
+        class="w-full rounded-3xl shadow-md my-8"
+        loading="lazy"
+      />
+      <div>
+        <p>
+          The last few days have been some of the hardest of my life. For the
+          past 3 days, you had stopped drinking, and every time you managed to
+          eat something, you would end up vomiting it a day later. I knew
+          something was wrong, but I kept hoping you would pull through like you
+          always did.
+        </p>
+        <br />
+        <p>
+          Then came the call from the vet. The words I never wanted to hear. I
+          had to make the hardest decision of my life, to say goodbye. My heart
+          broke in that moment, but I knew it was the right thing for you.
+        </p>
+      </div>
+      <div>
+        <p>
+          I wanted to take you on one last walk, to feel the breeze and see the
+          world together one more time. But you couldn't. You made it only about
+          20 steps outside the house before you just fell on the floor, too weak
+          to keep going. That was the moment I realized I would never see you
+          run again, or jump again, or watch your tail swing happily behind you.
+          The world seemed to stop right then. I sat beside you, holding you,
+          wishing I could make it all better.
+        </p>
+        <br />
+        <p>
+          You were my best friend, my family, my comfort through everything.
+          Thank you for every wag, every cuddle, every happy moment we shared. I
+          will miss you more than words can ever say.
+        </p>
+      </div>
+      <div>
+        <p>
+          The next day, the house was so quiet. No soft paws, no gentle
+          breathing, no tail tapping against the floor. Just silence. It felt
+          like the world had lost a bit of its warmth without you in it. Every
+          time I walked into a room, I expected to see you there, looking up at
+          me with those big, loving eyes. But you weren't. And that hurt more
+          than I can say.
+        </p>
+        <br />
+        <p>Rest now, my sweet girl. You'll always be in my heart.</p>
+        <img
+          src="./blog-04-2.jpg"
+          alt="Goodbye old friend"
+          class="w-full rounded-3xl shadow-md my-8"
+          loading="lazy"
+        />
+        <center style="font-size: 12px; opacity: 0.4">
+          <i
+            >Picture of her last walk, taken just hours before she passed
+            away.</i
+          >
+        </center>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/motion@v12.23.11/dist/motion.js"></script>
+    <script src="./script.js"></script>
     <style>
       #projects:not([gone-back]) > a *,
       #projects:not([gone-back]) > div {
